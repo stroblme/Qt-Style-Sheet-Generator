@@ -6,7 +6,7 @@ class PaletteParser():
 
     paletteDict = IndexedOrderedDict()
 
-    regexp = r"\D+(?P<shadeNumber>\d)\D+(?P<hexValue>\S{6})\D+(?P<rgbValue>\d+\D+\d+\d+\D+\d+)\D+(?P<rgbaValue>\d+\D+\d+\d+\D+\d+\D+\d+)"
+    regexp = r"\D+(?P<shadeNumber>\d)\D+(?P<hexValue>\S{6})\D+(?P<rgbValue>\d+\D+\d+\D+\d+)\D+(?P<rgbaValue>\d+\D+\d+\D+\d+\D+\d+)"
 
     def parseDocument(self, filePath):
         paletteFile = open(filePath, 'r')
@@ -24,25 +24,21 @@ class PaletteParser():
             if "*** Primary color:" in line:
                 section = 'primary'
 
-                paletteDict[section] = sectionDict
                 sectionDict = IndexedOrderedDict()
 
             elif "*** Secondary color (1):" in line:
                 section = 'secondary_1'
 
-                paletteDict[section] = sectionDict
                 sectionDict = IndexedOrderedDict()
 
             elif "*** Secondary color (2):" in line:
                 section = 'secondary_2'
 
-                paletteDict[section] = sectionDict
                 sectionDict = IndexedOrderedDict()
 
             elif "*** Complement color:" in line:
                 section = 'complementary'
 
-                paletteDict[section] = sectionDict
                 sectionDict = IndexedOrderedDict()
 
             # only if a section has been detected, the line is not empty and it's not a comment
@@ -59,6 +55,10 @@ class PaletteParser():
                     sectionDict[shadeNum] = shadeDict
 
                     shadeDict = IndexedOrderedDict()
+
+            if section != "":
+                paletteDict[section] = sectionDict
+
 
         # store changes
         self.paletteDict = paletteDict
