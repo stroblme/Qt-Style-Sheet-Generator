@@ -208,7 +208,7 @@ QRadioButton::indicator:unchecked:disabled
 QMenuBar
 {
     background-color: #primary_shade_4;
-    color: #secondary_1_shade_0;
+    color: #FFFFFF;
 }
 
 QMenuBar::item
@@ -226,7 +226,7 @@ QMenuBar::item:pressed
 {
     border: 0.1ex solid #secondary_1_shade_2;
     background-color: #primary_shade_1;
-    color: #secondary_1_shade_0;
+    color: #FFFFFF;
     margin-bottom: -0.1ex;
     padding-bottom: 0.1ex;
 }
@@ -234,7 +234,7 @@ QMenuBar::item:pressed
 QMenu
 {
     border: 0.1ex solid #secondary_1_shade_2;
-    color: #secondary_1_shade_0;
+    color: #FFFFFF;
     margin: 0.2ex;
 }
 
@@ -252,7 +252,7 @@ QMenu::item
 
 QMenu::item:selected
 {
-    color: #secondary_1_shade_0;
+    color: #FFFFFF;
 }
 
 QMenu::separator
@@ -350,7 +350,7 @@ QLineEdit
     border-style: solid;
     border: 0.1ex solid #secondary_1_shade_2;
     border-radius: 0.2ex;
-    color: #secondary_1_shade_0;
+    color: #FFFFFF;
 }
 
 QGroupBox
@@ -518,23 +518,23 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical
 
 QTextEdit
 {
-    background-color: #secondary_1_shade_3;
-    color: #secondary_1_shade_0;
+    background-color: #secondary_1_shade_4;
+    color: #FFFFFF;
     border: 0.1ex solid #secondary_1_shade_2;
 }
 
 QPlainTextEdit
 {
-    background-color: #secondary_1_shade_3;;
-    color: #secondary_1_shade_0;
+    background-color: #secondary_1_shade_4;;
+    color: #FFFFFF;
     border-radius: 0.2ex;
     border: 0.1ex solid #secondary_1_shade_2;
 }
 
 QHeaderView::section
 {
-    background-color: #secondary_1_shade_2;
-    color: #secondary_1_shade_0;
+    background-color: #secondary_1_shade_4;
+    color: #FFFFFF;
     padding: 0.5ex;
     border: 0.1ex solid #secondary_1_shade_2;
 }
@@ -631,8 +631,8 @@ QToolBar::separator:vertical
 
 QPushButton
 {
-    color: #secondary_1_shade_0;
-    background-color: #primary_shade_3;
+    color: #FFFFFF;
+    background-color: #primary_shade_4;
     border-width: 0.1ex;
     border-color: #secondary_1_shade_2;
     border-style: solid;
@@ -652,7 +652,7 @@ QPushButton:disabled
     padding-left: 1ex;
     padding-right: 1ex;
     border-radius: 0.2ex;
-    color: #secondary_2_shade_4;
+    color: #FFFFFF;
 }
 
 QPushButton:focus
@@ -669,7 +669,7 @@ QPushButton:pressed
 
 QComboBox
 {
-    selection-background-color: #primary_shade_1;
+    selection-background-color: #primary_shade_4;
     border-style: solid;
     border: 0.1ex solid #secondary_1_shade_2;
     border-radius: 0.2ex;
@@ -687,14 +687,14 @@ QPushButton:hover
 {
     background-color: #primary_shade_2;
     border: 0.1ex solid #primary_shade_1;
-    color: #secondary_1_shade_0;
+    color: #FFFFFF;
 }
 
 QPushButton:checked:hover
 {
     background-color: #primary_shade_3;
     border: 0.1ex solid #primary_shade_1;
-    color: #secondary_1_shade_0;
+    color: #FFFFFF;
 }
 
 QComboBox:hover,
@@ -706,7 +706,7 @@ QAbstractView:hover,
 QTreeView:hover
 {
     border: 0.1ex solid #primary_shade_1;
-    color: #secondary_1_shade_0;
+    color: #FFFFFF;
 }
 
 QComboBox:hover:pressed,
@@ -824,6 +824,7 @@ QAbstractSpinBox::down-arrow:hover
 QLabel
 {
     border: 0ex solid black;
+    color: #FFFFFF;
 }
 
 /* BORDERS */

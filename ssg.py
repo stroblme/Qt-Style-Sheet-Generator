@@ -6,7 +6,7 @@ from paletteParser import PaletteParser
 from generator import Generator
 
 PALETTEFILENAME = "./palette.txt"
-TEMPLATEFILENAME = "./breeze.template"
+TEMPLATEFILENAME = "./dark.template"
 OUTPUTFILENAME = "./output/dark.qss"
 
 def argumentHelper():
