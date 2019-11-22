@@ -5,8 +5,8 @@ import argparse
 from paletteParser import PaletteParser
 from generator import Generator
 
-PALETTEFILENAME = "./palette.txt"
-TEMPLATEFILENAME = "./dark.template"
+PALETTEFILENAME = "./resources/palette.txt"
+TEMPLATEFILENAME = "./resources/dark.template"
 OUTPUTFILENAME = "./output/dark.qss"
 
 def argumentHelper():
