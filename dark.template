@@ -47,10 +47,10 @@ QToolTip
 
 QWidget
 {
-    color: #secondary_1_shade_0;
+    color: #FFFFFF;
     background-color: #primary_shade_4;
-    selection-background-color:#primary_shade_1;
-    selection-color: #secondary_1_shade_0;
+    selection-background-color:#primary_shade_3;
+    selection-color: #FFFFFF;
     background-clip: border;
     border-image: none;
     border: 0px transparent black;
@@ -59,13 +59,13 @@ QWidget
 
 QWidget:item:hover
 {
-    background-color: #primary_shade_1;
-    color: #secondary_1_shade_0;
+    background-color: #primary_shade_3;
+    color: #FFFFFF;
 }
 
 QWidget:item:selected
 {
-    background-color: #primary_shade_1;
+    background-color: #primary_shade_3;
 }
 
 
