@@ -5,9 +5,11 @@ import argparse
 from paletteParser import PaletteParser
 from generator import Generator
 
-PALETTEFILENAME = "./resources/palette.txt"
-TEMPLATEFILENAME = "./resources/dark.template"
-OUTPUTFILENAME = "./output/dark.qss"
+PALETTEFILENAME = ".\\resources\\palette.txt"
+TEMPLATEFILENAME = ".\\resources\\dark.template"
+OUTPUTFILENAME = ".\\output\\dark.qss"
+
+CED = os.path.dirname(os.path.realpath(__file__))
 
 def argumentHelper():
     """
@@ -43,12 +45,19 @@ def main():
 
     if args.palette:
         PALETTEFILENAME = args.palette
+    else:
+        PALETTEFILENAME = CED + '\\' + PALETTEFILENAME
 
     if args.template:
         TEMPLATEFILENAME = args.template
-        
+    else:
+        TEMPLATEFILENAME = CED + '\\' + TEMPLATEFILENAME
+
     if args.output:
         OUTPUTFILENAME = args.output
+    else:
+        OUTPUTFILENAME = CED + '\\' + OUTPUTFILENAME
+
         
     paletteParserInst = PaletteParser()
 

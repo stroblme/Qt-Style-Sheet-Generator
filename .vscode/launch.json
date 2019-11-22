@@ -8,8 +8,8 @@
             "name": "ssg Test",
             "type": "python",
             "request": "launch",
-            "program": "${workspaceFolder}/ssg.py",
-            "cwd": "${workspaceFolder}",
+            "program": "${workspaceFolder}/src/ssg.py",
+            "cwd": "${workspaceFolder}/src/",
             "args": [],
             "console": "integratedTerminal",
         }
