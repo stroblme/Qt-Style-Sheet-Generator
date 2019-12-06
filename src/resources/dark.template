@@ -91,7 +91,7 @@ QGroupBox::indicator
 QCheckBox::indicator:unchecked,
 QCheckBox::indicator:unchecked:focus
 {
-    border-image: url(:/dark/checkbox_unchecked_disabled.svg);
+    background: qradialgradient(cx:0, cy:0, radius: 1.3, fx:0.5, fy:0.7, stop:0.25 #primary_shade_3, stop:0.3 #secondary_1_shade_4);
 }
 
 QCheckBox::indicator:unchecked:hover,
@@ -106,7 +106,7 @@ QGroupBox::indicator:unchecked:pressed
 
 QCheckBox::indicator:checked
 {
-    border-image: url(:/dark/checkbox_checked.svg);
+    background: qradialgradient(cx:0, cy:0, radius: 1.3, fx:0.5, fy:0.7, stop:0.25 #primary_shade_0, stop:0.3 #secondary_1_shade_4);
 }
 
 QCheckBox::indicator:checked:hover,
@@ -117,7 +117,7 @@ QGroupBox::indicator:checked:focus,
 QGroupBox::indicator:checked:pressed
 {
     border: none;
-    border-image: url(:/dark/checkbox_checked.svg);
+    background: qradialgradient(cx:0, cy:0, radius: 1.3, fx:0.5, fy:0.7, stop:0.25 #primary_shade_0, stop:0.3 #secondary_1_shade_4);
 }
 
 QCheckBox::indicator:indeterminate
@@ -146,7 +146,7 @@ QGroupBox::indicator:checked:disabled
 QCheckBox::indicator:unchecked:disabled,
 QGroupBox::indicator:unchecked:disabled
 {
-    border-image: url(:/dark/checkbox_unchecked_disabled.svg);
+    background: qradialgradient(cx:0, cy:0, radius: 1.3, fx:0.5, fy:0.7, stop:0.25 #primary_shade_3, stop:0.3 #secondary_1_shade_4);
 }
 
 QRadioButton
@@ -197,7 +197,7 @@ QRadioButton::indicator:checked:pressed
 QRadioButton::indicator:checked:disabled
 {
     outline: none;
-    background: qradialgradient(cx:0, cy:0, radius: 1.3, fx:0.5, fy:0.7, stop:0.25 #primary_shade_3, stop:0.3 #secondary_1_shade_4);
+    background: qradialgradient(cx:0, cy:0, radius: 1.3, fx:0.5, fy:0.7, stop:0.25 #primary_shade_2, stop:0.3 #secondary_1_shade_4);
 }
 
 QRadioButton::indicator:unchecked:disabled
@@ -273,43 +273,43 @@ QMenu::separator
    (see QActionGroup::setExclusive) */
 QMenu::indicator:non-exclusive:unchecked
 {
-    border-image: url(:/dark/checkbox_unchecked_disabled.svg);
+    background: qradialgradient(cx:0, cy:0, radius: 1.3, fx:0.5, fy:0.7, stop:0.25 #primary_shade_3, stop:0.3 #secondary_1_shade_4);
 }
 
 QMenu::indicator:non-exclusive:unchecked:selected
 {
-    border-image: url(:/dark/checkbox_unchecked_disabled.svg);
+    background: qradialgradient(cx:0, cy:0, radius: 1.3, fx:0.5, fy:0.7, stop:0.25 #primary_shade_3, stop:0.3 #secondary_1_shade_4);
 }
 
 QMenu::indicator:non-exclusive:checked
 {
-    border-image: url(:/dark/checkbox_checked.svg);
+    background: qradialgradient(cx:0, cy:0, radius: 1.3, fx:0.5, fy:0.7, stop:0.25 #primary_shade_1, stop:0.3 #secondary_1_shade_4);
 }
 
 QMenu::indicator:non-exclusive:checked:selected
 {
-    border-image: url(:/dark/checkbox_checked.svg);
+    background: qradialgradient(cx:0, cy:0, radius: 1.3, fx:0.5, fy:0.7, stop:0.25 #primary_shade_1, stop:0.3 #secondary_1_shade_4);
 }
 
 /* exclusive indicator = radio button style indicator (see QActionGroup::setExclusive) */
 QMenu::indicator:exclusive:unchecked
 {
-    border-image: url(:/dark/radio_unchecked_disabled.svg);
+    background: qradialgradient(cx:0, cy:0, radius: 1.3, fx:0.5, fy:0.7, stop:0.25 #primary_shade_2, stop:0.3 #secondary_1_shade_4);
 }
 
 QMenu::indicator:exclusive:unchecked:selected
 {
-    border-image: url(:/dark/radio_unchecked_disabled.svg);
+    background: qradialgradient(cx:0, cy:0, radius: 1.3, fx:0.5, fy:0.7, stop:0.25 #primary_shade_2, stop:0.3 #secondary_1_shade_4);
 }
 
 QMenu::indicator:exclusive:checked
 {
-    border-image: url(:/dark/radio_checked.svg);
+    background: qradialgradient(cx:0, cy:0, radius: 1.3, fx:0.5, fy:0.7, stop:0.25 #primary_shade_1, stop:0.3 #secondary_1_shade_4);
 }
 
 QMenu::indicator:exclusive:checked:selected
 {
-    border-image: url(:/dark/radio_checked.svg);
+    background: qradialgradient(cx:0, cy:0, radius: 1.3, fx:0.5, fy:0.7, stop:0.25 #primary_shade_1, stop:0.3 #secondary_1_shade_4);
 }
 
 QMenu::right-arrow
