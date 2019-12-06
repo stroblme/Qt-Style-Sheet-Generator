@@ -154,7 +154,7 @@ QRadioButton
     spacing: 0.5ex;
     outline: none;
     color: #FFFFFF;
-    margin-bottom: 0.2ex;
+    margin-bottom: 0.2ex;   
 }
 
 QRadioButton:disabled
@@ -165,7 +165,7 @@ QRadioButton:disabled
 QRadioButton::indicator:unchecked,
 QRadioButton::indicator:unchecked:focus
 {
-    border-image: url(:/dark/radio_unchecked_disabled.svg);
+    background: qradialgradient(cx:0, cy:0, radius: 1.3, fx:0.5, fy:0.7, stop:0.25 #primary_shade_2, stop:0.3 #secondary_1_shade_4);
 }
 
 
@@ -174,7 +174,7 @@ QRadioButton::indicator:unchecked:pressed
 {
     border: none;
     outline: none;
-    border-image: url(:/dark/radio_unchecked.svg);
+    background: qradialgradient(cx:0, cy:0, radius: 1.3, fx:0.5, fy:0.7, stop:0.25 #primary_shade_1, stop:0.3 #secondary_1_shade_4);
 }
 
 
@@ -182,7 +182,7 @@ QRadioButton::indicator:checked
 {
     border: none;
     outline: none;
-    border-image: url(:/dark/radio_checked.svg);
+    background: qradialgradient(cx:0, cy:0, radius: 1.3, fx:0.5, fy:0.7, stop:0.25 #primary_shade_0, stop:0.3 #secondary_1_shade_4);
 }
 
 QRadioButton::indicator:checked:hover,
@@ -191,18 +191,18 @@ QRadioButton::indicator:checked:pressed
 {
     border: none;
     outline: none;
-    border-image: url(:/dark/radio_checked.svg);
+    background: qradialgradient(cx:0, cy:0, radius: 1.3, fx:0.5, fy:0.7, stop:0.25 #primary_shade_1, stop:0.3 #secondary_1_shade_4);
 }
 
 QRadioButton::indicator:checked:disabled
 {
     outline: none;
-    border-image: url(:/dark/radio_checked_disabled.svg);
+    background: qradialgradient(cx:0, cy:0, radius: 1.3, fx:0.5, fy:0.7, stop:0.25 #primary_shade_3, stop:0.3 #secondary_1_shade_4);
 }
 
 QRadioButton::indicator:unchecked:disabled
 {
-    border-image: url(:/dark/radio_unchecked_disabled.svg);
+    background: qradialgradient(cx:0, cy:0, radius: 1.3, fx:0.5, fy:0.7, stop:0.25 #primary_shade_3, stop:0.3 #secondary_1_shade_4);
 }
 
 QMenuBar
@@ -245,6 +245,7 @@ QMenu::icon
 
 QMenu::item
 {
+    color: #FFFFFF;
     padding: 0.5ex 3ex 0.5ex 3ex;
     margin-left: 0.5ex;
     border: 0.1ex solid transparent; /* reserve space for selection border */
@@ -252,7 +253,12 @@ QMenu::item
 
 QMenu::item:selected
 {
-    color: #FFFFFF;
+    color: #AAAAAA;
+}
+
+QMenu::item:disabled
+{
+    color: #AAAAAA;
 }
 
 QMenu::separator
@@ -632,9 +638,9 @@ QToolBar::separator:vertical
 QPushButton
 {
     color: #FFFFFF;
-    background-color: #primary_shade_4;
-    border-width: 0.1ex;
-    border-color: #secondary_1_shade_2;
+    background-color: #secondary_2_shade_4;
+    border-width: 1ex;
+    border-color: #secondary_2_shade_3;
     border-style: solid;
     padding: 0.5ex;
     border-radius: 0.2ex;
@@ -643,21 +649,21 @@ QPushButton
 
 QPushButton:disabled
 {
-    background-color: #primary_shade_4;
-    border-width: 0.1ex;
-    border-color: #secondary_2_shade_4;
+    background-color: #secondary_2_shade_4;
+    border-width: 1ex;
+    border-color: #secondary_2_shade_3;
     border-style: solid;
     padding-top: 0.5ex;
     padding-bottom: 0.5ex;
     padding-left: 1ex;
     padding-right: 1ex;
-    border-radius: 0.2ex;
-    color: #FFFFFF;
+    color: #AAAAAA;
 }
 
 QPushButton:focus
 {
-    color: white;
+    background-color: #secondary_2_shade_2;
+
 }
 
 QPushButton:pressed
