@@ -248,7 +248,7 @@ QMenuBar::item:selected
 QMenuBar::item:pressed
 {
     border: 0.1ex solid #secondary_1_shade_2;
-    background-color: #primary_shade_1;
+    background-color: #primary_shade_2;
     color: #FFFFFF;
     margin-bottom: -0.1ex;
     padding-bottom: 0.1ex;
@@ -711,7 +711,6 @@ QComboBox
 QPushButton:checked
 {
     background-color: #primary_shade_2;
-    border-color: #secondary_2_shade_2;
 }
 
 QPushButton:hover
