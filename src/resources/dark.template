@@ -74,7 +74,7 @@ QCheckBox
     spacing: 0.5ex;
     outline: none;
     color: #FFFFFF;
-    margin-bottom: 0.2ex;   
+    margin-bottom: 0.2ex;
 }
 
 QCheckBox:disabled
@@ -177,7 +177,7 @@ QRadioButton
     spacing: 0.5ex;
     outline: none;
     color: #FFFFFF;
-    margin-bottom: 0.2ex;   
+    margin-bottom: 0.2ex;
 }
 
 QRadioButton:disabled
@@ -663,7 +663,7 @@ QPushButton
     color: #FFFFFF;
     background-color: #secondary_2_shade_4;
     border-width: 1ex;
-    border-color: #secondary_2_shade_3;
+    border-color: #secondary_2_shade_4;
     border-style: solid;
     padding: 0.5ex;
     border-radius: 0.2ex;
@@ -674,7 +674,7 @@ QPushButton:disabled
 {
     background-color: #secondary_2_shade_4;
     border-width: 1ex;
-    border-color: #secondary_2_shade_3;
+    border-color: #secondary_2_shade_4;
     border-style: solid;
     padding-top: 0.5ex;
     padding-bottom: 0.5ex;
@@ -683,15 +683,17 @@ QPushButton:disabled
     color: #AAAAAA;
 }
 
+/*
 QPushButton:focus
 {
     background-color: #secondary_2_shade_2;
 
 }
+*/
 
 QPushButton:pressed
 {
-    background-color: #primary_shade_4;
+    background-color: #primary_shade_3;
     padding-top: -1.5ex;
     padding-bottom: -1.7ex;
 }
@@ -714,7 +716,7 @@ QPushButton:checked
 
 QPushButton:hover
 {
-    background-color: #primary_shade_2;
+    background-color: #primary_shade_3;
     border: 0.1ex solid #primary_shade_1;
     color: #FFFFFF;
 }
@@ -725,6 +727,7 @@ QPushButton:checked:hover
     border: 0.1ex solid #primary_shade_1;
     color: #FFFFFF;
 }
+
 
 QComboBox:hover,
 QAbstractSpinBox:hover,
