@@ -6,7 +6,7 @@ class PaletteParser():
 
     paletteDict = IndexedOrderedDict()
 
-    regexp = r"\D+(?P<shadeNumber>\d)\D+(?P<hexValue>\S{6})\D+(?P<rgbValue>\d+\D+\d+\D+\d+)\D+(?P<rgbaValue>\d+\D+\d+\D+\d+\D+\d+)"
+    regexp = r"\D+(?P<shadeNumber>\d)\D+#(?P<hexValue>\S{6})\D+(?P<rgbValue>\d+\D+\d+\D+\d+)\D+(?P<rgbaValue>\d+\D+\d+\D+\d+\D+\d+)"
 
     def parseDocument(self, filePath):
         paletteFile = open(filePath, 'r')

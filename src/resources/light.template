@@ -69,7 +69,8 @@ QWidget:item:selected
 }
 
 
-QCheckBox
+QCheckBox,
+QRadioButton
 {
     spacing: 0.5ex;
     outline: none;
@@ -77,25 +78,31 @@ QCheckBox
     margin-bottom: 0.2ex;
 }
 
-QCheckBox:disabled
+QCheckBox:disabled,
+QRadioButton:disabled
 {
     color: #secondary_1_shade_2;
 }
 
-QGroupBox::indicator
+QGroupBox::indicator,
+QRadioButton::indicator
 {
     margin-left: 0.2ex;
 }
 
 QCheckBox::indicator:unchecked,
-QCheckBox::indicator:unchecked:focus
+QRadioButton::indicator:unchecked,
+QCheckBox::indicator:unchecked:focus,
+QRadioButton::indicator:unchecked:focus
 {
     background: qradialgradient(cx:0, cy:0, radius: 1.3, fx:0.5, fy:0.7, stop:0.25 #primary_shade_2, stop:0.3 #secondary_1_shade_4);
 }
 
 
 QCheckBox::indicator:unchecked:hover,
-QCheckBox::indicator:unchecked:pressed
+QRadioButton::indicator:unchecked:hover,
+QCheckBox::indicator:unchecked:pressed,
+QRadioButton::indicator:unchecked:pressed
 {
     border: none;
     outline: none;
@@ -111,7 +118,9 @@ QGroupBox::indicator:unchecked:pressed
 }
 
 QCheckBox::indicator:checked,
-QCheckBox::indicator:checked:focus
+QRadioButton::indicator:checked,
+QCheckBox::indicator:checked:focus,
+QRadioButton::indicator:checked:focus
 {
     border: none;
     outline: none;
@@ -119,7 +128,9 @@ QCheckBox::indicator:checked:focus
 }
 
 QCheckBox::indicator:checked:hover,
-QCheckBox::indicator:checked:pressed
+QRadioButton::indicator:checked:hover,
+QCheckBox::indicator:checked:pressed,
+QRadioButton::indicator:checked:pressed
 {
     border: none;
     outline: none;
@@ -132,27 +143,33 @@ QGroupBox::indicator:checked:pressed
     background: qradialgradient(cx:0, cy:0, radius: 1.3, fx:0.5, fy:0.7, stop:0.25 #primary_shade_0, stop:0.3 #secondary_1_shade_4);
 }
 
-QCheckBox::indicator:indeterminate
+QCheckBox::indicator:indeterminate,
+QRadioButton::indicator:indeterminate
 {
     outline: none;
     background: qradialgradient(cx:0, cy:0, radius: 1.3, fx:0.5, fy:0.7, stop:0.25 #primary_shade_3, stop:0.3 #secondary_1_shade_4);
 }
 
 QCheckBox::indicator:indeterminate:focus,
+QRadioButton::indicator:indeterminate:focus,
 QCheckBox::indicator:indeterminate:hover,
-QCheckBox::indicator:indeterminate:pressed
+QRadioButton::indicator:indeterminate:hover,
+QCheckBox::indicator:indeterminate:pressed,
+QRadioButton::indicator:indeterminate:pressed
 {
     outline: none;
     background: qradialgradient(cx:0, cy:0, radius: 1.3, fx:0.5, fy:0.7, stop:0.25 #primary_shade_3, stop:0.3 #secondary_1_shade_4);
 }
 
-QCheckBox::indicator:indeterminate:disabled
+QCheckBox::indicator:indeterminate:disabled,
+QRadioButton::indicator:indeterminate:disabled
 {
     outline: none;
     background: qradialgradient(cx:0, cy:0, radius: 1.3, fx:0.5, fy:0.7, stop:0.25 #primary_shade_3, stop:0.3 #secondary_1_shade_4);
 }
 
-QCheckBox::indicator:checked:disabled
+QCheckBox::indicator:checked:disabled,
+QRadioButton::indicator:checked:disabled
 {
     outline: none;
     background: qradialgradient(cx:0, cy:0, radius: 1.3, fx:0.5, fy:0.7, stop:0.25 #primary_shade_3, stop:0.3 #secondary_1_shade_4);
@@ -163,67 +180,12 @@ QGroupBox::indicator:checked:disabled
     background: qradialgradient(cx:0, cy:0, radius: 1.3, fx:0.5, fy:0.7, stop:0.25 #primary_shade_3, stop:0.3 #secondary_1_shade_4);
 }
 
-QCheckBox::indicator:unchecked:disabled
+QCheckBox::indicator:unchecked:disabled,
+QRadioButton::indicator:unchecked:disabled
 {
     background: qradialgradient(cx:0, cy:0, radius: 1.3, fx:0.5, fy:0.7, stop:0.25 #primary_shade_3, stop:0.3 #secondary_1_shade_4);
 }
 QGroupBox::indicator:unchecked:disabled
-{
-    background: qradialgradient(cx:0, cy:0, radius: 1.3, fx:0.5, fy:0.7, stop:0.25 #primary_shade_3, stop:0.3 #secondary_1_shade_4);
-}
-
-QRadioButton
-{
-    spacing: 0.5ex;
-    outline: none;
-    color: #000000;
-    margin-bottom: 0.2ex;
-}
-
-QRadioButton:disabled
-{
-    color: #secondary_1_shade_2;
-}
-
-QRadioButton::indicator:unchecked,
-QRadioButton::indicator:unchecked:focus
-{
-    background: qradialgradient(cx:0, cy:0, radius: 1.3, fx:0.5, fy:0.7, stop:0.25 #primary_shade_1, stop:0.3 #secondary_1_shade_4);
-}
-
-
-QRadioButton::indicator:unchecked:hover,
-QRadioButton::indicator:unchecked:pressed
-{
-    border: none;
-    outline: none;
-    background: qradialgradient(cx:0, cy:0, radius: 1.3, fx:0.5, fy:0.7, stop:0.25 #primary_shade_2, stop:0.3 #secondary_1_shade_4);
-}
-
-
-QRadioButton::indicator:checked,
-QRadioButton::indicator:checked:focus
-{
-    border: none;
-    outline: none;
-    background: qradialgradient(cx:0, cy:0, radius: 1.3, fx:0.5, fy:0.7, stop:0.25 #primary_shade_0, stop:0.3 #secondary_1_shade_4);
-}
-
-QRadioButton::indicator:checked:hover,
-QRadioButton::indicator:checked:pressed
-{
-    border: none;
-    outline: none;
-    background: qradialgradient(cx:0, cy:0, radius: 1.3, fx:0.5, fy:0.7, stop:0.25 #primary_shade_0, stop:0.3 #secondary_1_shade_4);
-}
-
-QRadioButton::indicator:checked:disabled
-{
-    outline: none;
-    background: qradialgradient(cx:0, cy:0, radius: 1.3, fx:0.5, fy:0.7, stop:0.25 #primary_shade_3, stop:0.3 #secondary_1_shade_4);
-}
-
-QRadioButton::indicator:unchecked:disabled
 {
     background: qradialgradient(cx:0, cy:0, radius: 1.3, fx:0.5, fy:0.7, stop:0.25 #primary_shade_3, stop:0.3 #secondary_1_shade_4);
 }
